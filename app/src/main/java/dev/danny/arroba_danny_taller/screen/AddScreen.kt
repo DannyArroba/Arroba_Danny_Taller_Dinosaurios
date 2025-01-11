@@ -40,7 +40,7 @@ fun AddScreens(navController: NavHostController) {
             )
         }
     ) { paddingValues ->
-
+//1
         LazyColumn(
             modifier = Modifier.padding(paddingValues)
         ) {
