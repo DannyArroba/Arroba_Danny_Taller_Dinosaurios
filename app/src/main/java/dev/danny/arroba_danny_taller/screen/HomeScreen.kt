@@ -15,6 +15,15 @@ import androidx.navigation.NavHostController
 @Composable
 fun HomeScreens(navController: NavHostController) {
     Scaffold(
+
+        topBar = {
+            TopAppBar(
+                colors = TopAppBarDefaults.topAppBarColors(
+                    containerColor = Color.Green
+                ),
+                title = { Text("HOME", color = Color.White) }
+            )
+        },
         floatingActionButton = {
             FloatingActionButton(
                 containerColor = Color.Green,
@@ -26,14 +35,6 @@ fun HomeScreens(navController: NavHostController) {
                     tint = Color.White
                 )
             }
-        },
-        topBar = {
-            TopAppBar(
-                colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = Color.Green
-                ),
-                title = { Text("HOME", color = Color.White) }
-            )
         }
     ) { paddingValues ->
 
