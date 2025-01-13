@@ -38,7 +38,7 @@ fun ItemContact(name: String, role: String) {
             Text(
                 text = role,
                 fontSize = 14.sp,
-                color = Color(0xFF757575)
+                color = Color(0xFF5C5C5C)
             )
         }
     }

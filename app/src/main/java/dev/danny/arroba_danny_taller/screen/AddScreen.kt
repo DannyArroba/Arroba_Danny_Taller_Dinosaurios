@@ -1,6 +1,6 @@
 package dev.danny.arroba_danny_taller.screen
 
-import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.KeyboardArrowLeft
@@ -41,19 +41,19 @@ fun AddScreens(navController: NavHostController) {
         }
     ) { paddingValues ->
 //1
-        LazyColumn(
+        Column(
             modifier = Modifier.padding(paddingValues)
         ) {
-            item { ItemContact("Tyrannosaurus Rex", "Carnivoro") }
-            item { ItemContact("Triceratops", "Herbivoro") }
-            item { ItemContact("Velociraptor", "Carnivoro") }
-            item { ItemContact("Brachiosaurus", "Herbivoro") }
-            item { ItemContact("Stegosaurus", "Herbivoro") }
-            item { ItemContact("Ankylosaurus", "Herbivoro") }
-            item { ItemContact("Spinosaurus", "Carnivoro") }
-            item { ItemContact("Iguanodon", "Herbivoro") }
-            item { ItemContact("Allosaurus", "Carnivoro") }
-            item { ItemContact("Diplodocus", "Herbivoro") }
+            ItemContact("Tyrannosaurus Rex", "Carnivoro")
+            ItemContact("Triceratops", "Herbivoro")
+            ItemContact("Velociraptor", "Carnivoro")
+            ItemContact("Brachiosaurus", "Herbivoro")
+            ItemContact("Stegosaurus", "Herbivoro")
+            ItemContact("Ankylosaurus", "Herbivoro")
+            ItemContact("Spinosaurus", "Carnivoro")
+            ItemContact("Iguanodon", "Herbivoro")
+            ItemContact("Allosaurus", "Carnivoro")
+            ItemContact("Diplodocus", "Herbivoro")
         }
     }
 }

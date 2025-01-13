@@ -1,6 +1,6 @@
 package dev.danny.arroba_danny_taller.screen
 
-import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
@@ -11,8 +11,8 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 
 @OptIn(ExperimentalMaterial3Api::class)
-@Composable
 
+@Composable
 fun HomeScreens(navController: NavHostController) {
     Scaffold(
         floatingActionButton = {
@@ -37,19 +37,20 @@ fun HomeScreens(navController: NavHostController) {
         }
     ) { paddingValues ->
 
-        LazyColumn(
+        Column(
             modifier = Modifier.padding(paddingValues)
         ) {
-            item { ItemContact("Carnotaurus", "Carnivoro") }
-            item { ItemContact("Parasaurolophus", "Herbivoro") }
-            item { ItemContact("Pachycephalosaurus", "Herbivoro") }
-            item { ItemContact("Gigantosaurus", "Carnivoro") }
-            item { ItemContact("Corythosaurus", "Herbivoro") }
-            item { ItemContact("Therizinosaurus", "Herbivoro") }
-            item { ItemContact("Compsognathus", "Carnivoro") }
-            item { ItemContact("Edmontosaurus", "Herbivoro") }
-            item { ItemContact("Kentrosaurus", "Herbivoro") }
-            item { ItemContact("Deinonychus", "Carnivoro") }
+            ItemContact("Carnotaurus", "Carnivoro")
+            ItemContact("Parasaurolophus", "Herbivoro")
+            ItemContact("Pachycephalosaurus", "Herbivoro")
+            ItemContact("Gigantosaurus", "Carnivoro")
+            ItemContact("Corythosaurus", "Herbivoro")
+            ItemContact("Therizinosaurus", "Herbivoro")
+            ItemContact("Compsognathus", "Carnivoro")
+            ItemContact("Edmontosaurus", "Herbivoro")
+            ItemContact("Kentrosaurus", "Herbivoro")
+            ItemContact("Deinonychus", "Carnivoro")
         }
+
     }
 }
